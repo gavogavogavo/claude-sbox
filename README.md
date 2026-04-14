@@ -11,6 +11,7 @@ s&box is Facepunch's Source 2 game engine with a C# scripting layer. Its API, li
 **Personal (available across all your projects):**
 
 ```bash
+mkdir -p ~/.claude/skills
 git clone https://github.com/gavogavogavo/claude-sbox ~/.claude/skills/sbox
 ```
 
@@ -22,7 +23,7 @@ mkdir -p .claude/skills
 git clone https://github.com/gavogavogavo/claude-sbox .claude/skills/sbox
 ```
 
-Claude Code picks up new skill directories live — no restart required.
+Claude Code picks up skill file changes live. However, if `~/.claude/skills/` did not exist when your Claude Code session started (i.e. this is your first personal skill), you need to **restart Claude Code** after the `mkdir` so the watcher registers the new directory.
 
 > **Why the `sbox` (not `claude-sbox`) directory name?** The `name:` frontmatter in `SKILL.md` is `sbox`, which becomes the `/sbox` slash command. Cloning into `~/.claude/skills/sbox/` keeps the directory name and the invocation name in sync.
 

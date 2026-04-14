@@ -6,6 +6,13 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versio
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-04-14
+
+### Fixed
+
+- Personal install command in `README.md` now creates `~/.claude/skills/` first. Previously the `git clone` command would fail on a fresh Claude Code install because `git clone` doesn't create intermediate parent directories and the `skills/` subdirectory is only created once you install your first personal skill.
+- Documented the known Claude Code quirk that creating a top-level skills directory mid-session requires a restart so the file watcher registers the new directory.
+
 ## [0.1.1] — 2026-04-14
 
 ### Fixed
