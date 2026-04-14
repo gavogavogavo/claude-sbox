@@ -11,7 +11,7 @@ s&box is Facepunch's Source 2 game engine with a C# scripting layer. Its API, li
 **Personal (available across all your projects):**
 
 ```bash
-git clone https://github.com/YOUR-USER/claude-sbox ~/.claude/skills/sbox
+git clone https://github.com/gavogavogavo/claude-sbox ~/.claude/skills/sbox
 ```
 
 **Project-local (this game only):**
@@ -19,7 +19,7 @@ git clone https://github.com/YOUR-USER/claude-sbox ~/.claude/skills/sbox
 ```bash
 cd my-sbox-game
 mkdir -p .claude/skills
-git clone https://github.com/YOUR-USER/claude-sbox .claude/skills/sbox
+git clone https://github.com/gavogavogavo/claude-sbox .claude/skills/sbox
 ```
 
 Claude Code picks up new skill directories live — no restart required.

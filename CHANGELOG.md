@@ -6,6 +6,12 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versio
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-04-14
+
+### Fixed
+
+- `README.md` install commands now point at `github.com/gavogavogavo/claude-sbox` instead of the `YOUR-USER` placeholder. Copy-paste installs now work.
+
 ## [0.1.0] — 2026-04-14
 
 Initial release.
