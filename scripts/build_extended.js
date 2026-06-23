@@ -13,9 +13,10 @@
  */
 
 const fs = require('fs');
+const path = require('path');
 
-const SCHEMA_PATH = 'C:/Users/D4ave/code/sboxskill/raw/api-schema.json';
-const OUTPUT_PATH = 'C:/Users/D4ave/code/sboxskill/references/api-schema-extended.md';
+const SCHEMA_PATH = path.join(__dirname, '../raw/api-schema.json');
+const OUTPUT_PATH = path.join(__dirname, '../references/api-schema-extended.md');
 
 // Types to exclude entirely (core docs, other reference files, or low-value noise)
 const CORE_EXCLUSIONS = new Set([
